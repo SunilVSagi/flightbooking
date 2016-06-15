@@ -1,0 +1,18 @@
+<suite name="Test Suite 4">
+	<test name="Expedia Search" preserve-order="true">
+	<parameters>
+		<parameter name="origin" value="New York" />
+		<parameter name="dest" value="Orlando" />
+		<parameter name="deptDate" value="08/01/2016" />
+		<parameter name="retDate" value="08/05/2016" />
+	</parameters>	
+		<classes>
+			<class name="com.expedia.flightbooking.TestNG_Parametrizing_XML">
+				<methods>
+		<!-- 			<include name="multiSearch" />  -->
+					<include name="basicSearch" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

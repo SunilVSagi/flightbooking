@@ -1,0 +1,17 @@
+<suite name = "Test Suite 2">
+	<test name = "Car Details"  preserve-order = "true">
+		<classes>
+			<class name = "com.expedia.flightbooking.TestNG_Group"> 
+				<groups>
+					<define name = "All Cars">
+				    	<include name = "SUV" />
+	      	   			<include name = "Sedan"/> 
+	      	   		</define>	
+				 	<run>
+			   			<include name = "All Cars" />
+			  		</run> 
+				</groups>
+			</class>
+		</classes>
+	</test>
+</suite>
